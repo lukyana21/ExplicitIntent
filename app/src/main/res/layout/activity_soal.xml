@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoalActivity">
+
+    <TextView
+        android:id="@+id/soal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siapa Namamu?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/soal1"
+        android:layout_marginStart="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_luky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Luky"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rg_soal1"/>
+
+        <RadioButton
+            android:id="@+id/rb_ridian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ridian"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_luky"/>
+
+        <RadioButton
+            android:id="@+id/rb_marcell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcell"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_ridian"/>
+
+        <RadioButton
+            android:id="@+id/rb_nugroho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nugroho"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_marcell"/>
+
+        <RadioButton
+            android:id="@+id/rb_fahrul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrul"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_nugroho"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/soal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa Agamamu?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_soal1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_soal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/soal2"
+        android:layout_marginStart="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_islam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islam"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rg_soal1"/>
+
+        <RadioButton
+            android:id="@+id/rb_kristen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kristen"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_islam"/>
+
+        <RadioButton
+            android:id="@+id/rb_katolik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Katolik"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_kristen"/>
+
+        <RadioButton
+            android:id="@+id/rb_hindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindu"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_katolik"/>
+
+        <RadioButton
+            android:id="@+id/rb_budha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budha"
+            app:layout_constraintStart_toStartOf="@id/rg_soal1"
+            app:layout_constraintTop_toBottomOf="@id/rb_hindu"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_soal2"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

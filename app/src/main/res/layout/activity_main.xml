@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/tombol1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pindah Activity"
+        android:backgroundTint="#B4E197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/tombol2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PINDAH ACTIVITY DENGAN DATA"
+        android:backgroundTint="#B4E197"
+        app:layout_constraintTop_toBottomOf="@id/tombol1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/tombol3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PINDAH ACTIVITY DENGAN OBJECT"
+        android:backgroundTint="#B4E197"
+        app:layout_constraintTop_toBottomOf="@id/tombol2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/tombol4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIAL A NUMBER"
+        android:backgroundTint="#B4E197"
+        app:layout_constraintTop_toBottomOf="@id/tombol3"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/tombol5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B4E197"
+        android:text="PINDAH ACTIVITY UNTUK RESULT"
+        app:layout_constraintTop_toBottomOf="@id/tombol4"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/hasilActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Dari Activity"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/tombol5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/hasilActivity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Dari Activity"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/hasilActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
